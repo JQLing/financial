@@ -28,12 +28,12 @@
       table.fund_class_list.fl
         thead
           tr.tab_tit
-            th(v-for="(v, i) in val.list"  :key="index") {{v}}
+            th(v-for="(v, i) in val.list"  :key="i") {{v}}
         tbody
-          tr(v-for="(v, i) in val.data"  :key="index" @click="goFund(v.id)")
+          tr(v-for="(v, i) in val.data"  :key="i" @click="goFund(v.id)")
             td {{v.name}}
-            td {{v.per}}
-            td {{v.val}}
+            td.bold {{v.per}}
+            td.bold {{v.val}}
             td {{v.opp}}
             //- router-link(:to="{name: 'Fund'}" tag="td") {{v.name}}
             //- router-link.per.bold(:to="{name: 'Fund'}" tag="td") {{v.per}}

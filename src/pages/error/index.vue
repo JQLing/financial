@@ -4,8 +4,8 @@
       div.flexbox.center
         //- img(:src='errorPage')
       .text 数据加载出错，请检查您的网络状态
-      div.flexbox.center
-        .reloadBtn(@click='reloadPage()') 重新加载
+      //- div.flexbox.center
+      //-   .reloadBtn(@click='reloadPage()') 重新加载
 </template>
 
 <script>
