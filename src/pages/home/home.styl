@@ -1,0 +1,113 @@
+// @require '@/style/mixins/variables'
+// .import ('@/style/mixins/variables')
+//@import "src/style/mixins/variables"
+  // <style src="@/style/mixins/variables" lang="stylus"></style>
+ // @require 'style/mixins/variables'
+  //  $primary-color = #26a2ff
+.home_page
+  .header
+    height 7rem
+    line-height 7rem
+    font-size 2.4rem
+    color #333
+    .home_logo
+      width: 30rem
+      .financing
+        font bold 2.6rem sans-serif
+      .split_line
+        margin 0 1.4rem
+    .scroll_board
+      width 16rem
+      height 7rem
+      overflow hidden
+      color #fb6532
+      font-size 1.1rem
+      .slide_wrap
+        width 16rem
+        animation scroll-board 6s infinite linear
+        li
+          height 7rem
+    @-webkit-keyframes scroll-board
+      0%
+        translateY 0rem
+      30%
+        translateY -26rem
+      60%
+        translateY -52rem
+      90%
+        translateY -78rem
+      100%
+        translateY 78rem
+  // 导航条
+  .nav
+    height 6rem
+    line-height 6rem
+    font-size 1.6rem
+    text-align center
+    background #fff
+    li
+      width 10%
+      a
+        display block
+        color #333
+
+      .active, a:hover
+        border-bottom 0.3rem solid #268eff
+  // 理财专区
+  .fund
+    margin-top: 0.4rem
+    .fund_class_title
+      width 25rem
+      height 34rem
+      color #fff
+      text-align center
+      // background #268eff url('/assets/img/tbl_money.jpg') bottom right 100% 100% no-repeat
+      // background #268eff
+      margin-bottom 2rem
+    li:nth-child(2) .fund_class_title
+      background #268eff
+    li:nth-child(3) .fund_class_title
+      background #ffa63c
+    li:nth-child(4) .fund_class_title
+      background #268eff
+    li:nth-child(5) .fund_class_title
+      background #ff8b65
+    .suptit
+      padding 2rem 42% 0.8rem
+      font-size 2.2rem
+      font-weight bold
+    .subtit
+      font-size 1.4rem
+      color rgba(255,255,255,0.6)
+    .fund_class_list
+      width 68%
+      border-collapse collapse
+      font-size 1.6rem
+      background #fff
+      tr
+        height 6rem
+        line-height 6rem
+      tr:hover
+        cursor pointer
+      .tab_tit
+        height 4rem
+        line-height 4rem
+        background #e9e9e9
+      .tab_tit:hover
+        cursor text
+      th, td
+        padding-left 2rem
+      .per
+        color #ff5d5b
+
+      .more
+        color #268eff
+  .footer
+    height 7rem
+    padding-top 3rem
+    text-align center
+    color #fff
+    background #484848
+    .copyright
+      margin-top 1rem
+      color rgba(255, 255, 255, 0.6)
