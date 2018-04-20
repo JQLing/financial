@@ -14,14 +14,14 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "echarts": "^3.4.0",
-    "npm": "^5.8.0",
+    "vue": "^2.5.2",
+    "vue-router": "^3.0.1",
+    "vue-resource": "^1.2.0",
+    "vuex": "^2.1.2",
     "pug": "^2.0.0-beta11",
     "stylus": "^0.54.5",
-    "vue": "^2.5.2",
-    "vue-resource": "^1.2.0",
-    "vue-router": "^3.0.1",
-    "vuex": "^2.1.2"
+    "echarts": "^3.4.0"
+
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
