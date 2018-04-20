@@ -1,0 +1,68 @@
+.login{
+	float: right;
+	width: 290px;
+	height: 240px;
+	padding: 36px 50px 26px;
+	margin: 100px auto;
+	background-color: #fff;
+}
+.login_title{
+	margin: 10px 0 30px;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center
+}
+.login_form{
+	
+}
+.field_username,.field_pwd{
+	width: 302px;
+	height: 40px;
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+.username_logo,.pwd_logo{
+	width: 40px;
+	height: 40px;
+	/* background:url(../images/login/logo.png) no-repeat 0 0; */
+}
+.pwd_logo{
+	background-position: 0 -40px;
+}
+.login_text{
+	display: block;
+	width: 278px;
+	height: 20px;
+	padding: 10px;
+	background-color: #fff;
+}
+.login_btn{
+	width: 302px;
+	height: 42px;
+	margin-bottom: 23px;
+}
+.login_submit{
+	display: block;
+	width: 300px;
+	height: 42px;
+	background-color: #ff4400;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	line-height: 42px;
+	cursor: pointer;
+}
+.login_submit:hover{
+	background-color: #f52b00;
+}
+
+.login_link{
+	padding-left: 176px;
+}
+.forgot_passwod,.free_register{
+	color: #6c6c6c;
+	margin-right: 11px;
+}
+.forgot_passwod:hover,.free_register:hover{
+	text-decoration: underline;
+}

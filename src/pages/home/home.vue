@@ -15,7 +15,7 @@
   ul.nav.clearfix
     li.fl(v-for="(item, index) in nav_list"  :key="index")
       //- router-link(:to="{name: '" + item.url + "'}") {{item.title}}
-      router-link(:to="{name: ''}"  :class="{'active': !index }") {{item.title}}
+      router-link(:to="{name: item.url}"  :class="{'active': !index }") {{item.title}}
   //- 理财专区
   ul.fund.space
     li.title
@@ -67,7 +67,7 @@ export default {
         {title: '基金', url: ''},
         {title: '定期', url: ''},
         {title: '帮助', url: ''},
-        {title: '登录', url: ''}
+        {title: '登录', url: 'Login'}
       ],
       fund_class: [
         {
