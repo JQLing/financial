@@ -9,9 +9,9 @@
       li(@click='goMyCard')
         .title 我的银行卡
         i.icon.icon-more
-      //- li(v-show='showLoginUrl',@click='goAccount')
-      //-   .title 密码管理
-      //-   i.icon.icon-more
+      li(@click='goAccount')
+        .title 密码管理
+        i.icon.icon-more
     ul
       li(@click='goQa')
         .title 常见问题
@@ -19,14 +19,14 @@
       li(@click='goVersion')
         .title 版本信息
         i.icon.icon-more
-  .exit(v-show='showLoginUrl',@click='logout()')
+  .exit(@click='logout')
     span 退出登录
 </template>
 
 <style src="./account.styl" lang="stylus" scoped></style>
 <script>
 export default {
-  name: 'Fund',
+  name: 'Account',
   data () {
     return {
       showLoginUrl: '',
@@ -39,23 +39,23 @@ export default {
   },
   mounted() {},
   methods: {
-    fetchData () {
-      // var fundId = this.$route.query.id;
-      // // let fundId = this.$route.params;
-      // let param = {
-      //   fundId: fundId
-      // };
-      // // ---------------------- vuex未写
-      // this.$store.dispatch('ajax', {
-      //   getFund: param
-      // }).then(r => {
-      //   this.commonName = r.showapi_res_body.data.commonName;
-      //   this.buyRate = r.showapi_res_body.data.buyRate
-      // })
+    fetchData () {},
+    goMyCard () {
+      this.$router.push({
+        name: 'Mycard'
+      })
     },
-    goMyCard() {},
-    goQa() {},
-    goVersion()
+    goQa () {
+      this.$router.push({
+        name: 'FAQ'
+      })
+    },
+    goVersion () {
+      this.$router.push({
+        name: 'Version'
+      })
+    },
+    logout () {}
   }
 }
 </script>

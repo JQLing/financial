@@ -64,7 +64,7 @@
 	width: 268px;
 	height: 42px;
 	margin-left: 60px;
-	background-color: #ff4400;
+	background-color: #558ae6;
 	color: #fff;
 	font-size: 15px;
 	text-align: center;
@@ -72,5 +72,5 @@
 	cursor: pointer;
 }
 .register_submit:hover{
-	background-color: #f52b00;
+	background-color: #526edc;
 }
